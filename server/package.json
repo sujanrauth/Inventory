@@ -1,0 +1,52 @@
+{
+  "name": "inventory-backend",
+  "version": "1.0.0",
+  "description": "inventory-backend",
+  "main": "src/server.js",
+  "engines": {
+    "node": "14.15.1"
+  },
+  "scripts": {
+    "serve": "nodemon --exec babel-node src/server.js",
+    "test": "NODE_ENV=test mocha --require @babel/register src/**/*.test.js",
+    "build": "babel src -d dist",
+    "start": "node dist/server.js"
+  },
+  "keywords": [
+    "Node.Js",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Sujan RS",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-inline-dotenv": "^1.6.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/register": "^7.12.1",
+    "async": "^3.2.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "faker": "^5.1.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0",
+    "prettier": "^2.2.1",
+    "sinon": "^9.2.1",
+    "supertest": "^6.0.1"
+  }
+}
